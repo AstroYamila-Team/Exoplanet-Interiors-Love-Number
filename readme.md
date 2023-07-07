@@ -8,9 +8,9 @@ Follow these steps to install all needed modules:
 2. Then, type in the command line:
 
 
-    cd modules
-    pip install -r requirements.txt
-    pip install . (or 'pip install -e .' if you want to install them in editable mode)
+        cd modules
+        pip install -r requirements.txt
+        pip install . (or 'pip install -e .' if you want to install them in editable mode)
 
 # Description of the files
 
