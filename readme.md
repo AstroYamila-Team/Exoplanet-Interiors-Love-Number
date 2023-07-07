@@ -10,7 +10,9 @@ Follow these steps to install all needed modules:
 
         cd modules
         pip install -r requirements.txt
-        pip install . (or 'pip install -e .' if you want to install them in editable mode)
+        pip install . 
+
+Replace the last line with `pip install -e .` if you want to install the modules in editable mode.
 
 # Description of the files
 
