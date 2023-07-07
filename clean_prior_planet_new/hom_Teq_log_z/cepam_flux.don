@@ -1,0 +1,6 @@
+&NL_FLUX
+ Flux_propagated='Yes'
+ opa_type='atm'/
+&NL_OPA_VISIBLE 
+ Kv_over_Kth=0
+ Kv_cste=6d-3/

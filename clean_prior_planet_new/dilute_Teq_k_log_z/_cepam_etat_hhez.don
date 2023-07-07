@@ -1,0 +1,11 @@
+&NL_FILES
+ files_eos = 'int','int','data/EOS_NN-NIST_smo/hotwater_NIST-REOS_one_spline_p9994_9994.dat','data/EOSH/S_SESAME_smo_waterP-q.dat'/
+&NL_PPT
+ p_ppt = 0./
+&NL_CONDENSE
+ icondense=0,
+ xcond=0., 0., 0., 2500., 0./
+&NL_DENSITE
+ pd=0.,
+ dp=1.,
+ dro=0.02/                                                   

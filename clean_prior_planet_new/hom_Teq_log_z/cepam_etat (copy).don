@@ -1,0 +1,26 @@
+&NL_FILES
+files_eos = 'data/EOS_YM2018/MH13+SCvH_H_withSmix.csv','data/EOSH/S_SCVH_helium-q.dat','data/EOSH/S_SESAME_waterP-q.dat','data/EOSH/S_SESAME_drysandP-q.dat' /
+&NL_PPT
+ p_ppt = 0.30000000 /
+&NL_CONDENSE
+ icondense =  0 ,
+xcond = 0.00000000,0.00000000,300.00000000,2500.00000000,0.00000000 /
+&NL_DENSITE
+ pd = 0.00000000 ,
+ dp = 1.00000000 ,
+ dro = 0.02000000 /
+&NL_TEMP_JUMP
+ tjump = 0.00000000 /
+&NL_DILCORE
+ dilcore =  0 /
+&NL_P_DILCORE
+ p_dilcore = 0.00000000 ,
+ dlogp_dilcore = 0.05000000 /
+&NL_WHICH_SPEC
+ which_spec =  3 /
+&NL_INCRE
+ dspec_dilcore = 0.00000000 /
+&NL_FILES_AUX
+ files_eos_aux = 'data/EOSH/S_SCVH_I-q.dat' /
+&NL_P_LP
+ p_lp = 0.00000000 /

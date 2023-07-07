@@ -1,0 +1,22 @@
+&NL_FILE
+ file_eos = 'int'/
+&NL_PPT
+ p_ppt = 0./
+&NL_CONDENSE
+ icondense=0,
+ yzsurf=0.26/
+&NL_DENSITE
+ pd=0.,
+ dp=1.,
+ dro=0.05/
+&NL_GRADAD
+ igrad=0,
+ yhe=0.238,
+ muz=17.,
+ cpz=4./
+
+* lppt force l'utilisation de l'EOS interpolee (=1) ou avec PPT (=2)
+* p_ppt (en Mbar) force la position de la PPT (si >0)
+* icondense=1 simule la condensation de H2O; Yz(surf)=0.086-0.135+/-0.05 (Saturn)
+* Augmentation de la densite: LogP, deltaLogP, deltaLogRho
+* Ajustement du gradient adiabatique: igrad, yhe_atm, muz, cpz

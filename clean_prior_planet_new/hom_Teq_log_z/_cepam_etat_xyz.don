@@ -1,0 +1,11 @@
+&NL_FILES
+ files_eos = 'data/EOSH/S_SCVH_I-q.dat','data/EOSH/S_SCVH_helium-q.dat','data/EOSH/S_SESAME_waterP-q.dat','data/EOSH/S_SESAME_drysandP-q.dat'/
+&NL_PPT
+ p_ppt = 1./
+&NL_CONDENSE
+ icondense=1,
+ xcond=0., 0., 0., 2500., 0./
+&NL_DENSITE
+ pd=0.,
+ dp=1.,
+ dro=0.02/                                                   

@@ -1,0 +1,59 @@
+&NL_MODEL		
+!model_type='global average' :  mu is set to 1/sqrt(3) and f to 0.25 			    
+!model_type='dayside average' : mu is set to 1/sqrt(3) and f to 5
+!model_type='no average' : f and mu are set manually below
+!lim_type= 'fixed TAU' : onlt taulim is considered (see below)
+!lim_type= 'fixed P' : only Plim is considered (see below)
+!-------------------------------------------------------
+ model_type = 'global average',
+ lim_type = 'fixed TAU'/
+&NL_PLIM
+! This is the limit pressure in cgs units (only for lim_type='fixed P')
+!-------------------------------------------------------
+ plim=8d6/
+&NL_TAULIM
+! This is the limit optical depth (only for lim_type='fixed tau')
+!-------------------------------------------------------
+ taulim=1d2/
+&NL_MEAN
+!This is valid only if 'no average' is choosen
+!mu is the angle between the vertical and the substellar point mu=1 is the substellar point
+!f is used for averaged (see model_type). For a given column atmosphere model at an angle mu, f=1
+!-------------------------------------------------------
+mu=1
+ff=1/
+&NL_COEFF_TYPE_p14
+!COEFF can be either "AUTO" to use the coefficients of Parmentier2013 or "USER" for user defined coefficients.If "AUTO" is choosen, the values of beta,gp,betav,gammav1,gammav2 are ignored.
+!COMP is used only if COEFF are "AUTO". "SOLAR" is a solar composition atmosphere whereas if "NOTIO" is choosen, the TiO/VO is removed.
+!STAR can only be "SUN" for now. As a future extension atmospheric coefficient specific for MDwarfs will be available.
+ ALBEDO="AUTO"
+ COEFF="AUTO"
+ COMP="SOLAR" 
+ STAR="SUN"/
+&NL_COEFF_p14
+!A is the albedo of the planet, used only if ALBEDO="USER"
+!betav determine the repartition of the stellar flux between the two visible bands. For betav=1 only the first visible band is considered. For betav=0 only the second band is considered
+!gamma1 is the ratio between the visible opacity in the first visible band and the thermal opacity.
+!gamma2 is the ratio between the visible opacity in the second visible band and the thermal opacity.
+!beta sets the relative width of the lines in the thermal wavelenght. For 0<beta<0.5 correspond to opacities with line shape. 0.5<beta<1 correspond to oapcities with gap shapes.
+!gp is the ratio of the thermal Planck mean opacity to the Rosseland mean opacity. Gp=1 correspond to grey thermal opacities.
+ Ab=0.0
+ Gv1=0.01
+ Gv2=0.01
+ Gv3=0.01
+ beta=0.8
+ gp=1.01/  
+&NL_NATM
+!n_atm is the number of point for the atmospheric output. It doesn't affect the radius calculations.
+ n_atm=100/
+&NL_Radius
+!photo_radius calculates of the photospheric radius if YES
+!chord_radius calculates the transit radius if YES
+!Rchord_precision='approximate' consider the opacity constant between the photospheric and the transit radius
+!Rchord_precision='exact' perform an exact calculation for the transit radius. This can be very long and generally changes less than 1% from the approximate calculation.
+!Ngamma=1 calculates the transit radius in the fist visible band
+!Ngamma=2 calculates the transit radius in the second visible band
+ photo_radius='NO'
+ chord_radius='NO'
+ Rchord_precision='approximate'
+ Ngamma=1/

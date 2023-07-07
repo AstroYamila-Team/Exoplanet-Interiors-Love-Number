@@ -1,0 +1,10 @@
+
+*** Model parameters ***
+mnoyau (scalar)Log-uniform densityLower bound = 0.000000e+00, Upper bound = 2.000000e-01
+yz (vector, dimension = 3)Multivariate log-uniform densityComponent 1: Lower bound = 1.000000e-02, Upper bound = 7.000000e-01Component 2: Lower bound = 1.000000e-02, Upper bound = 7.000000e-01Component 3: Lower bound = 0.000000e+00, Upper bound = 0.000000e+00
+T0 (scalar)Log-uniform densityLower bound = 2.000000e+02, Upper bound = 4.000000e+02
+*** End model parameters ***
+
+*** Data ***
+reqLog-normal densityMean = 8.464653e+09, Standard deviation = 2.859680e+08
+*** End data ***

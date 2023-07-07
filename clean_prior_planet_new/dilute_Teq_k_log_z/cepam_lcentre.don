@@ -1,0 +1,14 @@
+&NL_CORE
+ activate_Lcore= 1,
+ Lrad_per_Mearth = 2d20, 
+ Cv_core =  1d7/
+&NL_FIXED_LUM
+ activate_fixed_lum= 0,
+ fixed_lum=3d23/
+&NL_DISSIPATED_LUM
+ activate_diss_lum= 0,
+ diss_lum=4.53d26/
+&NL_VARIABLE_LUM
+ activate_var_lum= 0,
+ var_lum=0d0,
+ t0core=0d0/
